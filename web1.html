@@ -2,6 +2,41 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Website 🦁 </title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li::before {
+            content: "• ";
+            color: black;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+        .achievements, .sports {
+            margin-top: 20px;
+        }
+        .achievement-item, .sport-item {
+            padding: 8px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <table  cellspacing="20">
@@ -30,57 +65,64 @@
     </ul>
    
     <hr size="2" noshade>
-    <h3>SKILLS</h3>
-    <table border="1">
+    <h2>Skills Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Languages</th>
+                <th>Frameworks</th>
+                <th>State Management</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>
-                    c  ⭐⭐⭐⭐
+                    <ul>
+                        <li>C ⭐⭐⭐⭐</li>
+                        <li>C++ ⭐⭐⭐⭐</li>
+                        <li>Python ⭐⭐⭐</li>
+                        <li>HTML ⭐⭐⭐⭐</li>
+                        <li>CSS ⭐⭐⭐</li>
+                        <li>JavaScript ⭐⭐⭐</li>
+                    </ul>
                 </td>
                 <td>
-                    c++ ⭐⭐⭐⭐
+                    <ul>
+                        <li>Bootstrap ⭐⭐⭐⭐⭐</li>
+                        <li>Tailwind ⭐⭐⭐⭐</li>
+                        <li>React ⭐⭐⭐⭐</li>
+                    </ul>
                 </td>
-                 <td>
-                    PYTHON ⭐⭐⭐
+                <td>
+                    <ul>
+                        <li>Redux ⭐⭐⭐</li>
+                        <li>Context API ⭐⭐⭐</li>
+                    </ul>
                 </td>
-                 <td>
-                    HTML ⭐⭐⭐⭐
-                </td>
-                 <td>
-                    CSS ⭐⭐⭐
-                </td>
-                 <td>
-                    JAVASCRIPT ⭐⭐⭐
-                </td>
-                 <td>
-                    REACT ⭐⭐⭐⭐
-                </td>
-                 <td>
-                    FRAMEWORKS - BOOTSTRAP ⭐⭐⭐⭐⭐, TAILWIND ⭐⭐⭐⭐
-                </td>
-                
-                 <td>
-                    STATE MANAGEMENT - REDUX ⭐⭐⭐ , CONTEXT API ⭐⭐⭐
-                </td>
-                
             </tr>
+        </tbody>
+    </table>
              <hr size="2" noshade>
-            <h3> ACHIEVEMENTS</h3>
-                <tr>
-                <td> Winner of Web Wars Hackathon conducted by BMSCE </td>
-                 <td> BLOCKCHAIN Track Winners of SHECODES hackathon conducted by the REVA University</td>
-                
-                </tr>
-            <hr size="2" noshade>
-            <h3> SPORTS</h3>
-            <tr>
-                <td>Basketball       ⭐⭐</td>
-                <td>cricket          ⭐⭐⭐</td>
-                  <td>table tennis   ⭐⭐</td>
-                  <td>volleyball     ⭐⭐</td>
-                 <td>FIFA            ⭐⭐⭐⭐⭐</td>
-                
-            </tr>
+             <h3>Achievements</h3>
+
+             <div class="achievements">
+                 <div class="achievement-item">
+                     Winner of Web Wars Hackathon conducted by BMSCE
+                 </div>
+                 <div class="achievement-item">
+                     BLOCKCHAIN Track Winners of SHECODES hackathon conducted by REVA University
+                 </div>
+             </div>
+             <h3>Sports</h3>
+
+             <div class="sports">
+                 <div class="sport-item">Basketball ⭐⭐</div>
+                 <div class="sport-item">Cricket ⭐⭐⭐</div>
+                 <div class="sport-item">Table Tennis ⭐⭐</div>
+                 <div class="sport-item">Volleyball ⭐⭐</div>
+                 <div class="sport-item">FIFA ⭐⭐⭐⭐⭐</div>
+             </div>
         </tbody>
     </table>
     <hr size="2" noshade>
